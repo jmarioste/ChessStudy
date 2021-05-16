@@ -1,5 +1,5 @@
 import React from "react";
-import { Header, LoginForm } from "../components";
+import { NavBar, LoginForm } from "../components";
 import styled from "styled-components";
 
 interface LoginPageProps {
@@ -9,7 +9,6 @@ interface LoginPageProps {
 export default function LoginPage(props: LoginPageProps) {
   return (
     <>
-      <Header></Header>
       <LoginForm setLoggedIn={props.setLoggedIn} />
     </>
   );
